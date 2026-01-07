@@ -19,16 +19,16 @@
 
 ```bash
 #npm 
-npm create nuxt@latest -- --template github:favorodera/nuxt-template
+npx gitget@latest https://github.com/favorodera/nuxt-template <my-project>
 
 #pnpm
-pnpm create nuxt@latest -- --template github:favorodera/nuxt-template
+pnpm dlx gitget@latest https://github.com/favorodera/nuxt-template <my-project>
 
 #yarn
-yarn create nuxt@latest -- --template github:favorodera/nuxt-template
+yarn dlx gitget@latest https://github.com/favorodera/nuxt-template <my-project>
 
 #bun
-bunx create-nuxt@latest -- --template github:favorodera/nuxt-template
+bunx gitget@latest https://github.com/favorodera/nuxt-template <my-project>
 ```
 
 ## Development Server

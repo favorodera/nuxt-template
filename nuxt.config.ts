@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  css: ['./app/assets/css/main.css'],
+  css: ['./app/assets/css/tailwind.css'],
 
   colorMode: {
     classSuffix: '',

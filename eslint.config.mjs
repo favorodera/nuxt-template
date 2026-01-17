@@ -12,7 +12,18 @@ export default withNuxt()
     rules: { ...betterTailwind.configs['recommended-error'].rules },
     settings: {
       'better-tailwindcss': {
-        entryPoint: './app/assets/css/tailwind.css',
+        entryPoint: './app/assets/css/app.css',
       },
     },
+  })
+  .append({
+    ignores: ['./app/components/**/*.vue, ./app/components/**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  })
+  .overrideRules({
+    'better-tailwindcss/no-unregistered-classes': ['warn', {
+      ignore: ['toaster'],
+    }],
   })

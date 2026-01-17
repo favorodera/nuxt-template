@@ -16,12 +16,33 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
   ],
 
+  components: [
+    '~/components',
+  ],
+  
+  imports: {
+    presets: [
+      {
+        from: 'vue-sonner',
+        imports: ['toast'],
+      },
+    ],
+  },
+
   devtools: { enabled: true },
 
-  css: ['./app/assets/css/tailwind.css'],
+  css: [
+    './app/assets/css/tailwind.css',
+    './app/assets/css/app.css',
+    'vue-sonner/style.css',
+  ],
 
   colorMode: {
     classSuffix: '',
+  },
+
+  experimental: {
+    typedPages: true,
   },
   compatibilityDate: '2025-07-15',
 
@@ -51,7 +72,17 @@ export default defineNuxtConfig({
 
   shadcn: {
     prefix: '',
-    componentDir: '@/components',
+    componentDir: '@/components/shadcn',
+  },
+
+  veeValidate: {
+    autoImports: true,
+    componentNames: {
+      Form: 'VeeForm',
+      Field: 'VeeField',
+      FieldArray: 'VeeFieldArray',
+      ErrorMessage: 'VeeErrorMessage',
+    },
   },
 
 })

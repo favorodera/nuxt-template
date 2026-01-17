@@ -22,10 +22,10 @@ export default defineNuxtConfig({
   
   imports: {
     presets: [
-      {
-        from: 'vue-sonner',
-        imports: ['toast'],
-      },
+      // {
+      //   from: 'vue-sonner',
+      //   imports: ['toast'],
+      // },
     ],
   },
 
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   css: [
     './app/assets/css/tailwind.css',
     './app/assets/css/app.css',
-    'vue-sonner/style.css',
+    // 'vue-sonner/style.css',
   ],
 
   colorMode: {

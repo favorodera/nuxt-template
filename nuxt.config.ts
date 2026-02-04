@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@vee-validate/nuxt',
+    'notform-nuxt',
     '@pinia/colada-nuxt',
     'shadcn-nuxt',
   ],
@@ -48,7 +48,6 @@ export default defineNuxtConfig({
 
   vite: { plugins: [tailwindcss()] },
 
-
   eslint: {
     config: {
       stylistic: true,
@@ -73,16 +72,6 @@ export default defineNuxtConfig({
   shadcn: {
     prefix: '',
     componentDir: '@/components/shadcn',
-  },
-
-  veeValidate: {
-    autoImports: true,
-    componentNames: {
-      Form: 'VeeForm',
-      Field: 'VeeField',
-      FieldArray: 'VeeFieldArray',
-      ErrorMessage: 'VeeErrorMessage',
-    },
   },
 
 })

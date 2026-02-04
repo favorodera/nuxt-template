@@ -3,7 +3,7 @@
 ## Contents
 - Shadcn UI
 - Pinia
-- VeeValidate
+- NotForm
 - TailwindCSS
 - Nuxt Image
 - Nuxt Icon
